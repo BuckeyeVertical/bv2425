@@ -1,9 +1,10 @@
 #
 # PX4 Gazebo garden development environment in Ubuntu 22.04 jammy
 #
+# Adapted from https://github.com/mzahana/px4_ros2_humble
+# Original code by mzahana
 
 FROM osrf/ros:humble-desktop-full
-LABEL maintainer="Mohamed Abdelkader <mohamedashraf123@gmail.com>"
 
 #
 # Setup XRCE-DDS Agent & Client

@@ -1,9 +1,10 @@
 #
 # PX4 Gazebo 11 development environment in Ubuntu 22.04 Jammy
 #
+# Adapted from https://github.com/mzahana/px4_ros2_humble
+# Original code by mzahana
 
 FROM mzahana/px4-dev-base-jammy:latest
-LABEL maintainer="Mohamed Abdelkader <mohamedashraf123@gmail.com>"
 
 RUN wget --quiet http://packages.osrfoundation.org/gazebo.key -O - | apt-key add - \
 	&& sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -sc` main" > /etc/apt/sources.list.d/gazebo-stable.list' \

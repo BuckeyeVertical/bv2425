@@ -7,14 +7,14 @@
 # Optional:
 #   - device mounting such as: joystick mounted to /dev/input/js0
 #
-# Authors: Mohammed Abdelkader, mohamedashraf123@gmail.com
-#          Eashan Vytla (Forked), Eashan.Vytla@gmail.com
+# Adapted from https://github.com/mzahana/px4_ros2_humble
+# Original code by mzahana
 
 
-# DOCKER_REPO="mzahana/px4-dev-ros2-humble:latest"
-DOCKER_REPO="px4-dev-simulation-ubuntu22"
+# DOCKER_REPO="px4-dev-ros2-humble:latest"
+DOCKER_REPO="bv-dev"
 # DOCKER_REPO="osrf/ros:humble-desktop"
-CONTAINER_NAME="px4_ros2_humble"
+CONTAINER_NAME="bvdock"
 WORKSPACE_DIR=~/${CONTAINER_NAME}_shared_volume
 CMD=""
 DOCKER_OPTS=""

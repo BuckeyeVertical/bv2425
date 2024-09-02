@@ -1,9 +1,10 @@
 #
 # PX4 ROS 2 Humble development environment
 #
+# Adapted from https://github.com/mzahana/px4_ros2_humble
+# Original code by mzahana
 
 FROM mzahana/px4-dev-simulation-jammy:latest
-LABEL maintainer="Mohamed Abdelkader <mohamedashraf123@gmail.com>"
 
 # setup environment
 ENV ROS_DISTRO humble

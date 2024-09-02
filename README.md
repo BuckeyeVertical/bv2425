@@ -1,9 +1,24 @@
 # Buckeye Vertical 2024-2025 Codebase
+
 What is included in the Docker image is
 * Ubuntu 22.04 (jammy)
 * ROS 2 Humble
 * Gazebo Garden
 * Development tools required by PX4 firmware
+
+# Prerequisites
+Windows (GPU):
+1) Install WSL
+2) Install docker within wsl
+3) Install nvidia CUDA
+4) Install nvidia container toolkit
+
+Windows:
+1) Install WSL
+2) Install docker within wsl
+
+Macos:
+1) Install docker
 
 # Build Docker Image
 Docker should be installed before proceeding with the next steps
@@ -12,8 +27,8 @@ You can follow [this link](https://docs.docker.com/engine/install/ubuntu/) for d
 * Clone this package `git clone https://github.com/BuckeyeVertical/bv2425.git`
 * Build the docker image
     ```bash 
-    cd px4_ros2_humble/docker
-    make px4-dev-simulation-ubuntu22
+    cd bv2425/docker
+    make bv-dev
     ```
 
 This builds a Docker image that has the required PX4 development environment, and ROS 2 Humble Desktop. It does not container the PX4 source code or any ROS 2 workspaces. This is covered in the following sections.
@@ -32,7 +47,7 @@ Otherwise, run
 
 **NOTE**
 
-* Source files and workspaces should be saved inside a shared volume. The path to the shared volume inside the container is `/home/user/shared_volume`. The path to the shared volume in the host is `$HOME/px4_ros2_humble_shared_volume`.
+* Source files and workspaces should be saved inside a shared volume. The path to the shared volume inside the container is `/home/user/shared_volume`. The path to the shared volume in the host is `$HOME/bvdock_shared_volume`.
 * When you login inside the container, the username is `user` and the passwrod is `user`. `user` is part of the `sudo` group and can install pckages using `sudo apt install`
 
 # Install PX4
@@ -74,3 +89,7 @@ It's recommended to have the `PX4-Autopilot` src and the ros 2 workspace(s) insi
 # Gazebo Simulation
 ## Useful Links
 * [Gazebo library of simulations worlds and models](https://app.gazebosim.org/fuel)
+
+## Acknowledgements
+
+This project uses components from [px4_ros2_humble](https://github.com/mzahana/px4_ros2_humble) by [mzahana]. The original work is licensed under [MIT License].

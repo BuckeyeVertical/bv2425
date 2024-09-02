@@ -1,9 +1,10 @@
 #
 # PX4 base development environment
 #
+# Adapted from https://github.com/mzahana/px4_ros2_humble
+# Original code by mzahana
 
 FROM ubuntu:22.04
-LABEL maintainer="Mohamed Abdelkader <mohamedashraf123@gmail.com>"
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV LANG C.UTF-8

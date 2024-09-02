@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Adapted from https://github.com/mzahana/px4_ros2_humble
+# Original code by mzahana
+
 # Start virtual X server in the background
 # - DISPLAY default is :99, set in dockerfile
 # - Users can override with `-e DISPLAY=` in `docker run` command to avoid

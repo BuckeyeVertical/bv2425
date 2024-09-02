@@ -1,5 +1,8 @@
 #! /usr/bin/env bash
 
+# Adapted from https://github.com/mzahana/px4_ros2_humble
+# Original code by mzahana
+
 set -e
 
 ## Bash script to setup PX4 development environment on Ubuntu LTS (22.04, 20.04, 18.04).
