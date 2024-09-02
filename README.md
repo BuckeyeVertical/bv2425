@@ -80,6 +80,14 @@ It's recommended to have the `PX4-Autopilot` src and the ros 2 workspace(s) insi
 # Build & Run ROS 2 Wrokspace
 * You can build/run ROS 2 workspace as described [here](https://docs.px4.io/main/en/ros/ros2_comm.html#build-ros-2-workspace)
 
+# Developing with dev container
+* Install docker & devcontainer plugins in vscode
+* Make sure the docker is running (you can check by running `docker ps`)
+* Use `Ctrl + shift + P` and type `Attach to Running Container...` and click enter
+* Pick the container name when prompted
+* Once the new window pops up, click `Open Folder`
+* Open the shared volume
+
 # Examples
 * [Offboard control with PX4](https://github.com/Jaeyoung-Lim/px4-offboard)
     * Use `MicroXRCEAgent udp4 -p 8888` instead of `micro-ros-agent udp4 --port 8888`
