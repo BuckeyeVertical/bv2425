@@ -1,5 +1,4 @@
-# px4_ros2_humble
-A Docker development environment for PX4 + ROS 2 Humble
+# Buckeye Vertical 2024-2025 Codebase
 What is included in the Docker image is
 * Ubuntu 22.04 (jammy)
 * ROS 2 Humble
@@ -10,7 +9,7 @@ What is included in the Docker image is
 Docker should be installed before proceeding with the next steps
 You can follow [this link](https://docs.docker.com/engine/install/ubuntu/) for docker setup on Ubuntu
 
-* Clone this package `git clone https://github.com/mzahana/px4_ros2_humble`
+* Clone this package `git clone https://github.com/BuckeyeVertical/bv2425.git`
 * Build the docker image
     ```bash 
     cd px4_ros2_humble/docker
