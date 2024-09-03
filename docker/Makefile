@@ -6,7 +6,7 @@
 all: bv-dev bv-prod
 
 bv-dev:
-	docker build -t bv-dev . -f Dockerfile_simulation-ubuntu22
+	docker build -t bv-dev . -f Dockerfile_simulation-arm64
 
 bv-prod:
 	docker build -t bv-prod . -f Dockerfile_ros2-humble
