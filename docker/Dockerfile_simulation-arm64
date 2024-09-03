@@ -81,8 +81,8 @@ ENV QT_X11_NO_MITSHM=1
 ENV JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8
 
 # Install JSBSim
-RUN wget https://github.com/JSBSim-Team/jsbsim/releases/download/v1.1.13/JSBSim-devel_1.1.13-986.jammy.arm64.deb
-RUN dpkg -i JSBSim-devel_1.1.13-986.jammy.arm64.deb
+#RUN wget https://github.com/JSBSim-Team/jsbsim/releases/download/v1.1.13/JSBSim-devel_1.1.13-986.jammy.arm64.deb
+#RUN dpkg -i JSBSim-devel_1.1.13-986.jammy.arm64.deb
 
 #
 # Insatll VS Code for easy code development
