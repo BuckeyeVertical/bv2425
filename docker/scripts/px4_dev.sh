@@ -14,7 +14,7 @@ set -e
 ## - jMAVSim and Gazebo9 simulator (omit with arg: --no-sim-tools)
 ##
 
-INSTALL_NUTTX="true"
+INSTALL_NUTTX="false"
 INSTALL_SIM="true"
 INSTALL_ARCH=`uname -m`
 
