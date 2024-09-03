@@ -8,17 +8,18 @@ What is included in the Docker image is
 
 # Prerequisites
 Windows (GPU):
-1) Install WSL
-2) Install docker within wsl
-3) Install nvidia CUDA
-4) Install nvidia container toolkit
+1) Install [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) **Make sure to get Ubuntu 22.04
+2) Install [docker](https://docs.docker.com/engine/install/ubuntu/) within wsl
+3) Run `nvidia-smi` in windows powershell and check what CUDA version your nvidia drivers require
+4) Install the nvidia CUDA version from the previous step WITHIN WSL. Make sure to install Linux x86_64 WSL-Ubuntu. 
+5) Install [nvidia container toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html) within wsl
 
 Windows:
-1) Install WSL
-2) Install docker within wsl
+1) Install [WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
+2) Install [docker](https://docs.docker.com/engine/install/ubuntu/) within wsl
 
 Macos:
-1) Install docker
+1) Install [docker](https://docs.docker.com/desktop/install/mac-install/)
 
 # Build Docker Image
 Docker should be installed before proceeding with the next steps
