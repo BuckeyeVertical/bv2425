@@ -11,7 +11,7 @@
 # Original code by mzahana
 
 # DOCKER_REPO="mzahana/px4-dev-simulation-ubuntu22"
-DOCKER_REPO="osrf/ros:humble-desktop-full"
+DOCKER_REPO="bv-dev"
 CONTAINER_NAME="bvdock"
 WORKSPACE_DIR=~/${CONTAINER_NAME}_shared_volume
 DOCKER_OPTS=""
