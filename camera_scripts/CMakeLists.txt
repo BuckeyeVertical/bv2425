@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.10)
+project(capture)
+find_package(OpenCV REQUIRED)
+add_executable(capture capture.cpp)
+add_executable(divider vid_divide.cpp)
+target_link_libraries(capture ${OpenCV_LIBS})
+target_link_libraries(divider ${OpenCV_LIBS})

@@ -1,0 +1,4 @@
+/Users/seanbrod16/repos/bv2425/camera_scripts/build/CMakeFiles/capture.dir
+/Users/seanbrod16/repos/bv2425/camera_scripts/build/CMakeFiles/divider.dir
+/Users/seanbrod16/repos/bv2425/camera_scripts/build/CMakeFiles/edit_cache.dir
+/Users/seanbrod16/repos/bv2425/camera_scripts/build/CMakeFiles/rebuild_cache.dir
